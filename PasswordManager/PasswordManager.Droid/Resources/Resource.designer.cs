@@ -1678,8 +1678,8 @@ namespace PasswordManager.Droid
 			// aapt resource value: 0x7f06009a
 			public const int btnEditAccount = 2131099802;
 			
-			// aapt resource value: 0x7f06007c
-			public const int btnListDetail = 2131099772;
+			// aapt resource value: 0x7f06007d
+			public const int btnListDetail = 2131099773;
 			
 			// aapt resource value: 0x7f060087
 			public const int btnLogin = 2131099783;
@@ -1771,8 +1771,8 @@ namespace PasswordManager.Droid
 			// aapt resource value: 0x7f060081
 			public const int imageView = 2131099777;
 			
-			// aapt resource value: 0x7f06007d
-			public const int imageView10 = 2131099773;
+			// aapt resource value: 0x7f06007e
+			public const int imageView10 = 2131099774;
 			
 			// aapt resource value: 0x7f060083
 			public const int imageView16 = 2131099779;
@@ -1828,8 +1828,8 @@ namespace PasswordManager.Droid
 			// aapt resource value: 0x7f060084
 			public const int linearLayout = 2131099780;
 			
-			// aapt resource value: 0x7f06007e
-			public const int linearLayoutCat = 2131099774;
+			// aapt resource value: 0x7f06007f
+			public const int linearLayoutCat = 2131099775;
 			
 			// aapt resource value: 0x7f06000a
 			public const int listMode = 2131099658;
@@ -1996,8 +1996,8 @@ namespace PasswordManager.Droid
 			// aapt resource value: 0x7f060035
 			public const int textSpacerNoButtons = 2131099701;
 			
-			// aapt resource value: 0x7f06007f
-			public const int textView = 2131099775;
+			// aapt resource value: 0x7f06007c
+			public const int textView = 2131099772;
 			
 			// aapt resource value: 0x7f060053
 			public const int textView11 = 2131099731;

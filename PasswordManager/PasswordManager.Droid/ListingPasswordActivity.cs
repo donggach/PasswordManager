@@ -24,6 +24,7 @@ namespace PasswordManager.Droid
         RecyclerView recyclerView;
         List<ListAccountItem> lstItems;
         string type;
+        TextView textTitle;
 
         protected override async void OnCreate(Bundle bundle)
         {
@@ -38,6 +39,8 @@ namespace PasswordManager.Droid
             ImageView btnMenu = FindViewById<ImageView>(Resource.Id.btnMenu);
             ImageView btnRightMenu = FindViewById<ImageView>(Resource.Id.btnMenuRight);
             ImageView btnAdd = FindViewById<ImageView>(Resource.Id.btnAddList);
+             textTitle = FindViewById<TextView>(Resource.Id.textView11);
+
             btnMenu.Click += OnMenuItemClick;
             btnAdd.Click += OnAddClick;
             btnRightMenu.Click += (s, arg) => {
@@ -147,6 +150,9 @@ namespace PasswordManager.Droid
             switch (type)
             {
                 case "Bank":
+
+                    textTitle.Text = "Bank Password List";
+
                     // Bank
                     var bankRepository = new BankRepository(oDbConnection);
                     var lstBank = await bankRepository.SelectAllBanksAsync();
@@ -157,6 +163,9 @@ namespace PasswordManager.Droid
                     
                     break;
                 case "Computer":
+
+                    textTitle.Text = "Computer Password List";
+
                     // Computer
                     var computerRepository = new ComputerRepository(oDbConnection);
                     var lstComputer = await computerRepository.SelectAllComputersAsync();
@@ -167,6 +176,8 @@ namespace PasswordManager.Droid
 
                     break;
                 case "Email":
+                    textTitle.Text = "Email Password List";
+
                     // Email
                     var emailRepository = new EmailRepository(oDbConnection);
                     var lstEmail = await emailRepository.SelectAllEmailsAsync();
@@ -177,6 +188,8 @@ namespace PasswordManager.Droid
 
                     break;
                 case "Web":
+
+                    textTitle.Text = "Web Password List";
                     // Web
                     var webRepository = new WebRepository(oDbConnection);
                     var lstWeb = await webRepository.SelectAllWebsAsync();

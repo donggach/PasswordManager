@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-  <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="20.0dip" android:textColor="@color/colorAccent" android:textStyle="bold" android:id="@+id/txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="Name" android:layout_toLeftOf="@+id/btnListDetail" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
-  <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0dip" android:textColor="@android:color/white" android:id="@+id/txtAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Account" android:layout_toLeftOf="@+id/btnListDetail" android:layout_below="@+id/txtName" android:layout_alignLeft="@+id/txtName" />
-  <ImageView android:id="@+id/btnListDetail" android:background="@drawable/sidearrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-  <ImageView android:id="@+id/imageView10" android:background="@drawable/line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/txtAccount" android:layout_alignLeft="@+id/txtAccount" android:layout_alignRight="@+id/btnListDetail" android:layout_alignBottom="@+id/txtAccount" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textSize="20.0dip"
+        android:textColor="@color/accent_material_light"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginTop="5.0dip"
+        android:text="Name"
+        android:layout_toLeftOf="@+id/btnListDetail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textSize="14.0dip"
+        android:textColor="@android:color/white"
+        android:id="@+id/txtAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:layout_toLeftOf="@+id/btnListDetail"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView" />
+    <ImageView
+        android:id="@+id/btnListDetail"
+        android:background="@drawable/sidearrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:background="@drawable/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAccount"
+        android:layout_alignLeft="@+id/txtAccount"
+        android:layout_alignRight="@+id/btnListDetail"
+        android:layout_alignBottom="@+id/txtAccount" />
 </RelativeLayout>

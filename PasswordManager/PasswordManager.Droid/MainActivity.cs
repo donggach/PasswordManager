@@ -68,69 +68,69 @@ namespace PasswordManager.Droid
                 btnRegister.Visibility = ViewStates.Invisible;
             }
 
-            await InsertBanks(oDbConnection);
-            await InserEmail(oDbConnection);
-            await InserComputer(oDbConnection);
-            await InserWeb(oDbConnection);
+            //await InsertBanks(oDbConnection);
+            //await InserEmail(oDbConnection);
+            //await InserComputer(oDbConnection);
+            //await InserWeb(oDbConnection);
 
         }
 
-        private async Task InsertBanks(DbConnection oDbConnection)
-        {
-            List<Bank> banktList = new List<Bank>();
-            banktList.Add(new Bank {Id = 1, Name = "Bank1" ,Account = "Ducdv 1", ATMPassword = "123", InternetUser = "M01", InternetPassword = "1234" });
-            banktList.Add(new Bank { Id = 2, Name = "Bank2", Account = "Ducdv 2", ATMPassword = "123", InternetUser = "M01", InternetPassword = "1234" });
-            banktList.Add(new Bank { Id = 3, Name = "Bank3", Account = "Ducdv 3", ATMPassword = "123", InternetUser = "M01", InternetPassword = "1234" });
-            banktList.Add(new Bank { Id = 4, Name = "Bank4", Account = "Ducdv 4", ATMPassword = "123", InternetUser = "M01", InternetPassword = "1234" });
+        //private async Task InsertBanks(DbConnection oDbConnection)
+        //{
+        //    List<Bank> banktList = new List<Bank>();
+        //    banktList.Add(new Bank {Id = 1, Name = "Bank1" ,Account = "Ducdv 1", ATMPassword = "123", InternetUser = "M01", InternetPassword = "1234" });
+        //    banktList.Add(new Bank { Id = 2, Name = "Bank2", Account = "Ducdv 2", ATMPassword = "123", InternetUser = "M01", InternetPassword = "1234" });
+        //    banktList.Add(new Bank { Id = 3, Name = "Bank3", Account = "Ducdv 3", ATMPassword = "123", InternetUser = "M01", InternetPassword = "1234" });
+        //    banktList.Add(new Bank { Id = 4, Name = "Bank4", Account = "Ducdv 4", ATMPassword = "123", InternetUser = "M01", InternetPassword = "1234" });
 
-            var bankRepository = new BankRepository(oDbConnection);
+        //    var bankRepository = new BankRepository(oDbConnection);
 
-            foreach (Bank item in banktList)
-            {
-                await bankRepository.InsertBankAsync(item);
-            }
-        }
+        //    foreach (Bank item in banktList)
+        //    {
+        //        await bankRepository.InsertBankAsync(item);
+        //    }
+        //}
 
-        private async Task InserEmail(DbConnection oDbConnection)
-        {
-            List<Email> emailtList = new List<Email>();
-            emailtList.Add(new Email { Id = 1, Name = "Ducdv1",Password = "123", UserName = "User1" });
-            emailtList.Add(new Email { Id = 2, Name = "Ducdv1", Password = "123", UserName = "User1" });
+        //private async Task InserEmail(DbConnection oDbConnection)
+        //{
+        //    List<Email> emailtList = new List<Email>();
+        //    emailtList.Add(new Email { Id = 1, Name = "Ducdv1",Password = "123", UserName = "User1" });
+        //    emailtList.Add(new Email { Id = 2, Name = "Ducdv1", Password = "123", UserName = "User1" });
 
-            var emailRepository = new EmailRepository(oDbConnection);
+        //    var emailRepository = new EmailRepository(oDbConnection);
 
-            foreach (Email item in emailtList)
-            {
-                await emailRepository.InsertEmailAsync(item);
-            }
-        }
+        //    foreach (Email item in emailtList)
+        //    {
+        //        await emailRepository.InsertEmailAsync(item);
+        //    }
+        //}
 
-        private async Task InserComputer(DbConnection oDbConnection)
-        {
-            List<Computer> computerList = new List<Computer>();
-            computerList.Add(new Computer { Id = 1, Name = "Ducdv1", Password = "123", UserName = "User1" });
-            computerList.Add(new Computer { Id = 2, Name = "Ducdv1", Password = "123", UserName = "User1" });
+        //private async Task InserComputer(DbConnection oDbConnection)
+        //{
+        //    List<Computer> computerList = new List<Computer>();
+        //    computerList.Add(new Computer { Id = 1, Name = "Ducdv1", Password = "123", UserName = "User1" });
+        //    computerList.Add(new Computer { Id = 2, Name = "Ducdv1", Password = "123", UserName = "User1" });
 
-            var computerRepository = new ComputerRepository(oDbConnection);
+        //    var computerRepository = new ComputerRepository(oDbConnection);
 
-            foreach (Computer item in computerList)
-            {
-                await computerRepository.InsertComputerAsync(item);
-            }
-        }
+        //    foreach (Computer item in computerList)
+        //    {
+        //        await computerRepository.InsertComputerAsync(item);
+        //    }
+        //}
 
-        private async Task InserWeb(DbConnection oDbConnection)
-        {
-            List<Web> webList = new List<Web>();
-            webList.Add(new Web { Id = 1, Name = "Ducdv1", Password = "123", UserName = "User1" });
+        //private async Task InserWeb(DbConnection oDbConnection)
+        //{
+        //    List<Web> webList = new List<Web>();
+        //    webList.Add(new Web { Id = 1, Name = "Ducdv1", Password = "123", UserName = "User1" });
 
-            var webRepository = new WebRepository(oDbConnection);
+        //    var webRepository = new WebRepository(oDbConnection);
 
-            foreach (Web item in webList)
-            {
-                await webRepository.InsertWebAsync(item);
-            }
-        }
+        //    foreach (Web item in webList)
+        //    {
+        //        await webRepository.InsertWebAsync(item);
+        //    }
+        //}
     }
 }
 
